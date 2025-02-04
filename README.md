@@ -96,16 +96,33 @@ json
 /save endpoint:
 The /save endpoint saves the blockchain to a blockchain.json file. You should see the following message:
 
-Blockchain saved to blockchain.json!
-# Notes
-The blockchain is a simple implementation for educational purposes.
-Each block contains an index, timestamp, data, hash of the current block, and the hash of the previous block.
-The blockchain is saved to a blockchain.json file using the /save endpoint.
-The API is built using Flask and can be expanded to include other features like mining or validation.
+## View the Blockchain Data:
 
-# License
-This project is licensed under the MIT License - see the LICENSE file for details.
+Open a web browser or use a tool like curl to visit:
+```bash
+http://127.0.0.1:5000/blockchain
+```
 
+Save the Blockchain to a File:
+
+Visit the following URL in your browser:
+```bash
+http://127.0.0.1:5000/save
+```
+
+## Get the Blockchain JSON:
+
+nginx
+```bash
+curl http://127.0.0.1:5000/blockchain
+```
+
+## Save the Blockchain:
+
+nginx
+```bash
+curl http://127.0.0.1:5000/save
+```
 
 # SQL
 
@@ -120,3 +137,14 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 git add README.md
 git commit -m "Add README file"
 git push origin main
+```
+
+## Notes
+The blockchain is a simple implementation for educational purposes.
+Each block contains an index, timestamp, data, hash of the current block, and the hash of the previous block.
+The blockchain is saved to a blockchain.json file using the /save endpoint.
+The API is built using Flask and can be expanded to include other features like mining or validation.
+
+## License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
