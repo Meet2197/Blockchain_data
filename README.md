@@ -12,9 +12,10 @@ This is a simple implementation of a blockchain in Python. The blockchain is bac
 ## Prerequisites
 
 Make sure you have the following installed on your machine:
-
+   ```bash
 - Python 3.x
 - `pip` (Python's package installer)
+   ```
 
 ## Installation
 
@@ -23,44 +24,53 @@ Make sure you have the following installed on your machine:
    ```bash
    git clone https://github.com/yourusername/simple-blockchain-flask.git
    cd simple-blockchain-flask
-
+   ```
    Create a virtual environment (optional but recommended):
 
-bash
+```bash
 
 python -m venv venv
 source venv/bin/activate   # On Windows use `venv\Scripts\activate`
+```
 Install the required dependencies:
 
-bash
+```bash
 
 pip install -r requirements.txt
+```
 If you don’t have a requirements.txt file, you can manually install Flask using:
 
-bash
+
+```bash
 
 pip install flask
 Usage
 Run the server:
+```
 
-bash
+```bash
 
 python blockchain_server.py
 Access the blockchain via your web browser or using curl:
+```
 
 To view the blockchain in JSON format:
 
-bash
+```bash
 
 http://127.0.0.1:5000/blockchain
 To save the blockchain to a blockchain.json file:
+```
 
-bash
+```bash
+
 
 http://127.0.0.1:5000/save
 Example Output
 /blockchain endpoint:
 The /blockchain endpoint will return the entire blockchain in JSON format.
+
+```
 
 json
 
@@ -83,7 +93,7 @@ json
 /save endpoint:
 The /save endpoint saves the blockchain to a blockchain.json file. You should see the following message:
 
-bash
+```bash
 
 Blockchain saved to blockchain.json!
 Notes
@@ -93,6 +103,7 @@ The blockchain is saved to a blockchain.json file using the /save endpoint.
 The API is built using Flask and can be expanded to include other features like mining or validation.
 License
 This project is licensed under the MIT License - see the LICENSE file for details.
+```
 
 sql
 
